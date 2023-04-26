@@ -31,6 +31,7 @@ public class Service {
                 break;
             }
             for (int i = 0; i < playerList.size()-1 ; i++) {
+                System.out.println("\n***TURA PRZECIWNIKA***\n");
                 System.out.println(playerList.get(i));
             }
         }while (playerList.size() != 0);

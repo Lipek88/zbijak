@@ -30,6 +30,7 @@ public class User extends Player{
 
     @Override
     public void move(){
+        System.out.println("\n***TWÓJ RUCH***\n");
         Scanner scanner = new Scanner(System.in);
         String direction = scanner.next();
         if(direction.equalsIgnoreCase("W")){
@@ -41,5 +42,9 @@ public class User extends Player{
         }else if (direction.equalsIgnoreCase("D")) {
             moveRight();
         }
+    }
+    @Override
+    public String toString() {
+        return "Player: " + " X = " + getxPosition() + ", Y = " + getxPosition();
     }
 }
