@@ -45,6 +45,6 @@ public class User extends Player{
     }
     @Override
     public String toString() {
-        return "Player: " + " X = " + getxPosition() + ", Y = " + getxPosition();
+        return "Player: " + " X = " + getxPosition() + ", Y = " + getyPosition();
     }
 }

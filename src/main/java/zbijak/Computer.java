@@ -51,6 +51,6 @@ public class Computer extends Player{
 
     @Override
     public String toString() {
-        return "Computer: " + " X = " + getxPosition() + ", Y = " + getxPosition();
+        return "Computer: " + " X = " + getxPosition() + ", Y = " + getyPosition();
     }
 }
