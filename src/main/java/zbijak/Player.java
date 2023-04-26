@@ -30,6 +30,8 @@ public abstract class Player {
     public abstract void moveLeft();
     public abstract void moveRight();
 
+    public abstract void move();
+
     @Override
     public String toString() {
         return "Player{" +

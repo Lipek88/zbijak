@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ed4c403-1d3f-4905-90d3-09369c864c16" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -77,11 +84,30 @@
       <option name="project" value="LOCAL" />
       <updated>1682508255442</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fourth commit">
+      <created>1682508401495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682508401495</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="third commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit" />
+    <MESSAGE value="fourth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth commit" />
   </component>
 </project>

@@ -10,7 +10,7 @@ public class User extends Player{
 
     @Override
     public void moveUp() {
-        setyPosition(getyPosition() + 1);
+        setyPosition(getyPosition()+1);
     }
 
     @Override
@@ -28,7 +28,8 @@ public class User extends Player{
         setxPosition(getxPosition() + 1);
     }
 
-    public void moveUser(){
+    @Override
+    public void move(){
         Scanner scanner = new Scanner(System.in);
         String direction = scanner.next();
         if(direction.equalsIgnoreCase("W")){

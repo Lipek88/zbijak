@@ -11,7 +11,7 @@ public class Computer extends Player{
 
     public int chooseDirection(){
         Random random = new Random();
-        int direction = random.nextInt(5);
+        int direction = random.nextInt(1, 5);
         return direction;
     }
 
@@ -35,18 +35,18 @@ public class Computer extends Player{
         setxPosition(getxPosition() + 1);
     }
 
-    public void moveComputer(){
-        moveLeft();
-//        chooseDirection();
-//        if (chooseDirection()==1){
-//            moveUp();
-//        } else if (chooseDirection()==2) {
-//            moveDown();
-//        } else if (chooseDirection()==3) {
-//            moveLeft();
-//        } else if (chooseDirection()==4) {
-//            moveRight();
-//        }
+    @Override
+    public void move(){
+        chooseDirection();
+        if (chooseDirection()==1){
+            moveUp();
+        } else if (chooseDirection()==2) {
+            moveDown();
+        } else if (chooseDirection()==3) {
+            moveLeft();
+        } else if (chooseDirection()==4) {
+            moveRight();
+        }
     }
 
 

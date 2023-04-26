@@ -10,17 +10,17 @@ public class Service {
 
     User user = new User(1, 1);
 
-    List<Player> playerList = new ArrayList<>(List.of(computer1, /**computer2, computer3,**/ user));
+    List<Player> playerList = new ArrayList<>(List.of(computer1, computer2, computer3, user));
 
     public void play(){
         do {
-            user.moveUser();
+            user.move();
             System.out.println(user);
             emptyFieldCheck();
             if(playerList.size() == 1){
                 break;
             }
-            user.moveUser();
+            user.move();
             System.out.println(user);
             emptyFieldCheck();
             if(playerList.size() == 1){
@@ -48,7 +48,12 @@ public class Service {
     public void enemyMove(){
         for (int i = 0; i < playerList.size()-1; i++) {
             Computer computer = (Computer) playerList.get(i);
-            computer.moveComputer();
+            computer.move();
+//            do {
+//                computer.moveComputer();
+//                System.out.println(computer);
+//            }while(computer.getxPosition() < 1 || computer.getxPosition() > 3 || computer.getyPosition() < 1 || computer.getyPosition() > 3 );
+
             if(computer.getxPosition() == user.getxPosition() && computer.getyPosition() == user.getyPosition()){
                 System.out.println("GAME OVER");
                 playerList.remove(user);
