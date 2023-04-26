@@ -9,7 +9,7 @@ public class Service {
     Computer computer3 = new Computer(1, 3);
 
     User user = new User(1, 1);
-    
+
     List<Player> playerList = new ArrayList<>(List.of(computer1, /**computer2, computer3,**/ user));
 
     public void play(){
@@ -30,14 +30,8 @@ public class Service {
             if (!playerList.contains(user)){
                 break;
             }
-//            computer1.moveComputer();
-
-//            computer2.moveComputer();
-
-//            computer3.moveComputer();
-
-            for (Player player : playerList){
-                System.out.println(player);
+            for (int i = 0; i < playerList.size()-1 ; i++) {
+                System.out.println(playerList.get(i));
             }
         }while (playerList.size() != 0);
     }
