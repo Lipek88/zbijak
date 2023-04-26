@@ -9,32 +9,41 @@ public class Service {
     Computer computer3 = new Computer(1, 3);
 
     User user = new User(1, 1);
-
-//    List<Computer> playerList = new ArrayList<>(List.of(computer1, computer2, computer3));
-    List<Computer> playerList = new ArrayList<>(List.of(computer1, computer2, computer3));
+    
+    List<Player> playerList = new ArrayList<>(List.of(computer1, /**computer2, computer3,**/ user));
 
     public void play(){
         do {
             user.moveUser();
             System.out.println(user);
             emptyFieldCheck();
+            if(playerList.size() == 1){
+                break;
+            }
             user.moveUser();
             System.out.println(user);
             emptyFieldCheck();
+            if(playerList.size() == 1){
+                break;
+            }
+            enemyMove();
+            if (!playerList.contains(user)){
+                break;
+            }
 //            computer1.moveComputer();
 
 //            computer2.moveComputer();
 
 //            computer3.moveComputer();
 
-            for (Computer computer : playerList){
-                System.out.println(computer);
+            for (Player player : playerList){
+                System.out.println(player);
             }
         }while (playerList.size() != 0);
     }
     
     public void emptyFieldCheck () {
-        for (int i = 0; i < playerList.size(); i++) {
+        for (int i = 0; i < playerList.size()-1; i++) {
             if (playerList.get(i).getxPosition() == user.getxPosition() && playerList.get(i).getyPosition() == user.getyPosition()) {
                 System.out.println("TRAFIONY");
                 playerList.remove(playerList.get(i));
@@ -42,5 +51,16 @@ public class Service {
             }
         }
 
+    public void enemyMove(){
+        for (int i = 0; i < playerList.size()-1; i++) {
+            Computer computer = (Computer) playerList.get(i);
+            computer.moveComputer();
+            if(computer.getxPosition() == user.getxPosition() && computer.getyPosition() == user.getyPosition()){
+                System.out.println("GAME OVER");
+                playerList.remove(user);
+                break;
+            }
 
+        }
+    }
 }

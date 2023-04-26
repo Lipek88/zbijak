@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed4c403-1d3f-4905-90d3-09369c864c16" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/zbijak/Field.java" afterDir="false" />
+    <list default="true" id="4ed4c403-1d3f-4905-90d3-09369c864c16" name="Changes" comment="second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Field.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

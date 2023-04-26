@@ -36,16 +36,17 @@ public class Computer extends Player{
     }
 
     public void moveComputer(){
-        chooseDirection();
-        if (chooseDirection()==1){
-            moveUp();
-        } else if (chooseDirection()==2) {
-            moveDown();
-        } else if (chooseDirection()==3) {
-            moveLeft();
-        } else if (chooseDirection()==4) {
-            moveRight();
-        }
+        moveLeft();
+//        chooseDirection();
+//        if (chooseDirection()==1){
+//            moveUp();
+//        } else if (chooseDirection()==2) {
+//            moveDown();
+//        } else if (chooseDirection()==3) {
+//            moveLeft();
+//        } else if (chooseDirection()==4) {
+//            moveRight();
+//        }
     }
 
 
