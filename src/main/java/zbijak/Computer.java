@@ -1,6 +1,7 @@
 package zbijak;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Computer extends Player{
 
@@ -51,18 +52,18 @@ public class Computer extends Player{
 
     @Override
     public void move(){
-        if(getyPosition() == 10) {
+        if(getyPosition() == 1 && getxPosition() == 1) {
             chooseDirection();
             if (chooseDirection() == 1) {
-               move();
+               moveUp();
             } else if (chooseDirection() == 2) {
-                moveDown();
+                move();
             } else if (chooseDirection() == 3) {
-                moveLeft();
+                move();
             } else if (chooseDirection() == 4) {
                 moveRight();
             }
-        } else if (getyPosition() == 1) {
+        } else if (getyPosition() == 1 && getxPosition() > 1 && getxPosition() < 10) {
             chooseDirection();
             if (chooseDirection() == 1) {
                 moveUp();
@@ -73,7 +74,40 @@ public class Computer extends Player{
             } else if (chooseDirection() == 4) {
                 moveRight();
             }
-        } else if (getxPosition() == 1) {
+        } else if (getyPosition() == 1 && getxPosition() == 10) {
+            chooseDirection();
+            if (chooseDirection() == 1) {
+                moveUp();
+            } else if (chooseDirection() == 2) {
+                move();
+            } else if (chooseDirection() == 3) {
+                moveLeft();
+            } else if (chooseDirection() == 4) {
+                move();
+            }
+        } else if (getyPosition() == 10 && getxPosition() == 10) {
+            chooseDirection();
+            if (chooseDirection() == 1) {
+                move();
+            } else if (chooseDirection() == 2) {
+                moveDown();
+            } else if (chooseDirection() == 3) {
+                moveLeft();
+            } else if (chooseDirection() == 4) {
+                move();
+            }
+        } else if (getyPosition() == 10 && getxPosition() == 1) {
+            chooseDirection();
+            if (chooseDirection() == 1) {
+                move();
+            } else if (chooseDirection() == 2) {
+                moveDown();
+            } else if (chooseDirection() == 3) {
+                move();
+            } else if (chooseDirection() == 4) {
+                moveRight();
+            }
+        } else if (getxPosition() == 1 && getyPosition() > 1 && getyPosition() < 10) {
             chooseDirection();
             if (chooseDirection() == 1) {
                 moveUp();
@@ -84,7 +118,7 @@ public class Computer extends Player{
             } else if (chooseDirection() == 4) {
                 moveRight();
             }
-        } else if (getxPosition() == 10) {
+        } else if (getxPosition() == 10 && getyPosition() > 1 && getyPosition() < 10) {
             chooseDirection();
             if (chooseDirection() == 1) {
                 moveUp();
@@ -94,6 +128,17 @@ public class Computer extends Player{
                 moveLeft();
             } else if (chooseDirection() == 4) {
                 move();
+            }
+        } else if (getyPosition() == 10 && getxPosition() > 1 && getxPosition() < 10) {
+            chooseDirection();
+            if (chooseDirection() == 1) {
+                move();
+            } else if (chooseDirection() == 2) {
+                moveDown();
+            } else if (chooseDirection() == 3) {
+                moveLeft();
+            } else if (chooseDirection() == 4) {
+                moveRight();
             }
         }else {
             chooseDirection();
@@ -108,7 +153,6 @@ public class Computer extends Player{
             }
         }
     }
-
 
     @Override
     public String toString() {

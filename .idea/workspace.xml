@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682541272187</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="move validator">
+      <created>1682575378922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682575378922</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +130,7 @@
     <MESSAGE value="fourth commit" />
     <MESSAGE value="fifth commit" />
     <MESSAGE value="some visual change, @Overide toString vol 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="some visual change, @Overide toString vol 2" />
+    <MESSAGE value="move validator" />
+    <option name="LAST_COMMIT_MESSAGE" value="move validator" />
   </component>
 </project>

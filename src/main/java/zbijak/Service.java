@@ -14,6 +14,7 @@ public class Service {
 
     public void play(){
         do {
+            System.out.println(user);
             user.move();
             System.out.println(user);
             emptyFieldCheck();
@@ -26,12 +27,12 @@ public class Service {
             if(playerList.size() == 1){
                 break;
             }
-//            enemyMove();
-//            if (!playerList.contains(user)){
-//                break;
-//            }
+            enemyMove();
+            if (!playerList.contains(user)){
+                break;
+            }
             for (int i = 0; i < playerList.size()-1 ; i++) {
-//                System.out.println("\n***TURA PRZECIWNIKA***\n");
+                System.out.println("\n***TURA PRZECIWNIKA***\n");
                 System.out.println(playerList.get(i));
             }
         }while (playerList.size() != 0);
