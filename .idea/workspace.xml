@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed4c403-1d3f-4905-90d3-09369c864c16" name="Changes" comment="some visual change, @Overide toString">
+    <list default="true" id="4ed4c403-1d3f-4905-90d3-09369c864c16" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/zbijak/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/zbijak/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682512649910</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some visual change, @Overide toString vol 2">
+      <created>1682541272187</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682541272187</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,6 +122,7 @@
     <MESSAGE value="third commit" />
     <MESSAGE value="fourth commit" />
     <MESSAGE value="fifth commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fifth commit" />
+    <MESSAGE value="some visual change, @Overide toString vol 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="some visual change, @Overide toString vol 2" />
   </component>
 </project>

@@ -26,12 +26,12 @@ public class Service {
             if(playerList.size() == 1){
                 break;
             }
-            enemyMove();
-            if (!playerList.contains(user)){
-                break;
-            }
+//            enemyMove();
+//            if (!playerList.contains(user)){
+//                break;
+//            }
             for (int i = 0; i < playerList.size()-1 ; i++) {
-                System.out.println("\n***TURA PRZECIWNIKA***\n");
+//                System.out.println("\n***TURA PRZECIWNIKA***\n");
                 System.out.println(playerList.get(i));
             }
         }while (playerList.size() != 0);
@@ -50,11 +50,6 @@ public class Service {
         for (int i = 0; i < playerList.size()-1; i++) {
             Computer computer = (Computer) playerList.get(i);
             computer.move();
-//            do {
-//                computer.moveComputer();
-//                System.out.println(computer);
-//            }while(computer.getxPosition() < 1 || computer.getxPosition() > 3 || computer.getyPosition() < 1 || computer.getyPosition() > 3 );
-
             if(computer.getxPosition() == user.getxPosition() && computer.getyPosition() == user.getyPosition()){
                 System.out.println("GAME OVER");
                 playerList.remove(user);

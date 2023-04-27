@@ -28,19 +28,87 @@ public class User extends Player{
         setxPosition(getxPosition() + 1);
     }
 
+//    @Override
+//    public void move(){
+//        System.out.println("\n***TWÓJ RUCH***\n");
+//        Scanner scanner = new Scanner(System.in);
+//        String direction = scanner.next();
+//        if(direction.equalsIgnoreCase("W")){
+//            moveUp();
+//        } else if (direction.equalsIgnoreCase("A")) {
+//            moveLeft();
+//        }else if (direction.equalsIgnoreCase("S")) {
+//            moveDown();
+//        }else if (direction.equalsIgnoreCase("D")) {
+//            moveRight();
+//        }
+//    }
+
+
+
     @Override
     public void move(){
-        System.out.println("\n***TWÓJ RUCH***\n");
+//        System.out.println("\n***TWÓJ RUCH***\n");
         Scanner scanner = new Scanner(System.in);
-        String direction = scanner.next();
-        if(direction.equalsIgnoreCase("W")){
-            moveUp();
-        } else if (direction.equalsIgnoreCase("A")) {
-            moveLeft();
-        }else if (direction.equalsIgnoreCase("S")) {
-            moveDown();
-        }else if (direction.equalsIgnoreCase("D")) {
-            moveRight();
+        if(getyPosition() == 2) {
+            String direction = scanner.next();
+            if(direction.equalsIgnoreCase("W")){
+                System.out.println("You have to change direction");
+                move();
+            } else if (direction.equalsIgnoreCase("A")) {
+                moveLeft();
+            }else if (direction.equalsIgnoreCase("S")) {
+                moveDown();
+            }else if (direction.equalsIgnoreCase("D")) {
+                moveRight();
+            }
+        } else if (getxPosition() == 1) {
+            String direction = scanner.next();
+            if(direction.equalsIgnoreCase("W")){
+                moveUp();
+            } else if (direction.equalsIgnoreCase("A")) {
+                System.out.println("You have to change direction");
+                move();
+            }else if (direction.equalsIgnoreCase("S")) {
+                moveDown();
+            }else if (direction.equalsIgnoreCase("D")) {
+                moveRight();
+            }
+        } else if (getyPosition() == 1) {
+            String direction = scanner.next();
+            if(direction.equalsIgnoreCase("W")){
+                moveUp();
+            } else if (direction.equalsIgnoreCase("A")) {
+                moveLeft();
+            }else if (direction.equalsIgnoreCase("S")) {
+                System.out.println("You have to change direction");
+                move();
+            }else if (direction.equalsIgnoreCase("D")) {
+                moveRight();
+            }
+        } else if (getxPosition() == 2) {
+            String direction = scanner.next();
+            if(direction.equalsIgnoreCase("W")){
+                moveUp();
+            } else if (direction.equalsIgnoreCase("A")) {
+                moveLeft();
+            }else if (direction.equalsIgnoreCase("S")) {
+                moveDown();
+            }else if (direction.equalsIgnoreCase("D")) {
+                System.out.println("You have to change direction");
+                move();
+            }
+        }else {
+            String direction = scanner.next();
+            if(direction.equalsIgnoreCase("W")){
+                moveUp();
+            } else if (direction.equalsIgnoreCase("A")) {
+                moveLeft();
+            }else if (direction.equalsIgnoreCase("S")) {
+                moveDown();
+            }else if (direction.equalsIgnoreCase("D")) {
+                moveRight();
+            }
         }
     }
     @Override
